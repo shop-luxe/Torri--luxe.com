@@ -32,3 +32,5 @@ document.querySelectorAll('.whatsapp-button').forEach((button) => {
         window.open(whatsappLink, '_blank');
     });
 });
+
+
