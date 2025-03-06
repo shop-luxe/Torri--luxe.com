@@ -203,6 +203,184 @@ footer p {
     font-size: 14px;
 }
 
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #d4af37;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 10px;
+}
+
+/* Menú Flexbox */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #d4af37;
+}
+
+/* Productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 10%;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-info .price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #d4af37;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu ul {
@@ -226,22 +404,23 @@ footer p {
 
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 20px 5%;
     }
 
     .product-image {
-        height: 200px;
+        height: 180px;
     }
 
     .product-info h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .product-info p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .product-info .price {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .whatsapp-button {
@@ -253,6 +432,7 @@ footer p {
 @media (max-width: 480px) {
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 20px 10px;
     }
 
     .product-image {
@@ -260,7 +440,7 @@ footer p {
     }
 
     .product-info h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .product-info p {
@@ -268,7 +448,7 @@ footer p {
     }
 
     .product-info .price {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .whatsapp-button {
