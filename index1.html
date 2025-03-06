@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torri Luxe - Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="productos">
+    <header>
+        <div class="logo-container">
+            <h1>Torri Luxe</h1>
+            <img src="img/Logo-removebg-preview (1).webp" alt="Logo Torri Luxe" class="logo" loading="lazy">
+        </div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index1.html" class="active">Productos</a></li>
+                <li><a href="index2.html">Promociones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="productos" class="products">
+            <h2>Nuestros Productos</h2>
+            <p>Explora nuestra colección exclusiva de manillas diseñadas para transformar tus espacios.</p>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card" data-name="Manilla Clásica" data-price="$50.00">
+                    <div class="product-image">
+                        <img src="img/rolex.webp" alt="Manilla Clásica" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla rolex</h3>
+                        <p>Diseño en oro laminado</p>
+                        <p class="price">$100.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla Rolex', '$100.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product-card" data-name="Manilla Moderna" data-price="$60.00">
+                    <div class="product-image">
+                        <img src="img/$15.webp" alt="Manilla Moderna" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla balin 18k</h3>
+                        <p>Dale un toque a tu outfit.</p>
+                        <p class="price">$15.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla Balin 18k', '$60.00')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product-card" data-name="Manilla Vintage" data-price="$70.00">
+                    <div class="product-image">
+                        <img src="img/$20.webp" alt="Manilla Vintage" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Flor</h3>
+                        <p>Elegancia en macrame con detalles de oro laminado 18k</p>
+                        <p class="price">$20.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla Flor', '$20.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product-card" data-name="Manilla de Lujo" data-price="$90.00">
+                    <div class="product-image">
+                        <img src="img/$25.webp" alt="Manilla de Lujo" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla de Lujo</h3>
+                        <p>Acabado en oro 18K con detalles brillantes.</p>
+                        <p class="price">$25.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla de Lujo', '$25.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product-card" data-name="Manilla Elegante" data-price="$80.00">
+                    <div class="product-image">
+                        <img src="img/$35.webp" alt="Manilla Elegante" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Elegante</h3>
+                        <p>Diseño sofisticado para espacios modernos.</p>
+                        <p class="price">$35.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla Elegante', '$35.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="product-card" data-name="Manilla Minimalista" data-price="$55.00">
+                    <div class="product-image">
+                        <img src="img/$55.webp" alt="Manilla Minimalista" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Minimalista balin 18k</h3>
+                        <p>Líneas simples y elegantes.</p>
+                        <p class="price">$55.000</p>
+                        <button class="whatsapp-button"
+                            onclick="contactarWhatsApp('Manilla Minimalista balin 18k', '$55.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 7 -->
+                <div class="product-card" data-name="Manilla Dorada" data-price="$75.00">
+                    <div class="product-image">
+                        <img src="img/$60.webp" alt="Manilla Dorada" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Roja</h3>
+                        <p>Acabado en oro solido para un toque de lujo.</p>
+                        <p class="price">$60.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla roja', '$60.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 8 -->
+                <div class="product-card" data-name="Manilla Plateada" data-price="$65.00">
+                    <div class="product-image">
+                        <img src="img/$70.webp" alt="Manilla Plateada" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Oso</h3>
+                        <p>Acabado en oro laminado para un estilo clásico.</p>
+                        <p class="price">$70.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla oso', '$77.700')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 9 -->
+                <div class="product-card" data-name="Manilla Negra" data-price="$70.00">
+                    <div class="product-image">
+                        <img src="img/$80.webp" alt="Manilla Negra" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Negra</h3>
+                        <p>Diseño moderno en color negro.</p>
+                        <p class="price">$80.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla Negra', '$80.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 10 -->
+                <div class="product-card" data-name="Manilla Blanca" data-price="$60.00">
+                    <div class="product-image">
+                        <img src="img/$100.webp" alt="Manilla Blanca" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla de dinero</h3>
+                        <p>Acabado con un herraje de dinero para un estilo fresco.</p>
+                        <p class="price">$100.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla de dinero', '$100.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 11 -->
+                <div class="product-card" data-name="Manilla Roja" data-price="$85.00">
+                    <div class="product-image">
+                        <img src="img/$105.webp" alt="Manilla Roja" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Roja</h3>
+                        <p>Color vibrante para un toque audaz.</p>
+                        <p class="price">$105.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla Roja', '$105.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 12 -->
+                <div class="product-card" data-name="Manilla Azul" data-price="$75.00">
+                    <div class="product-image">
+                        <img src="img/$120.webp" alt="Manilla Azul" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla estrella</h3>
+                        <p>Color sereno para un estilo relajado.</p>
+                        <p class="price">$120.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla Estrella', '$120.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 13 -->
+                <div class="product-card" data-name="Manilla Verde" data-price="$65.00">
+                    <div class="product-image">
+                        <img src="img/$140.webp" alt="Manilla Verde" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Balin diamantado</h3>
+                        <p>Color natural para un estilo fresco.</p>
+                        <p class="price">$140.000</p>
+                        <button class="whatsapp-button"
+                            onclick="contactarWhatsApp('Manilla Balin diamantado', '$140.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 14 -->
+                <div class="product-card" data-name="Manilla Rosa" data-price="$70.00">
+                    <div class="product-image">
+                        <img src="img/$202.webp" alt="Manilla Rosa" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manilla Balin</h3>
+                        <p>Color suave para un estilo femenino.</p>
+                        <p class="price">$20.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Manilla balin', '$20.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <!-- Producto 15 -->
+                <div class="product-card" data-name="Manilla Morada" data-price="$80.00">
+                    <div class="product-image">
+                        <img src="img/anillo+manilla $200.webp" alt="Manilla Morada" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Anillo+Manilla</h3>
+                        <p>para un estilo único.</p>
+                        <p class="price">$200.000</p>
+                        <button class="whatsapp-button" onclick="contactarWhatsApp('Anillo+Manilla', '$200.000')">Me
+                            interesa</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/share/12EU2cKnLLs/?mibextid=qi2Omg" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@torri_luxe?_t=ZS-8uBsxZGFgMZ&_r=1" target="_blank"><i
+                    class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/torriluxe?igsh=MW94d2l6cG1pZWJ4aQ==" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Torri Luxe. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para redirigir a WhatsApp
+        function contactarWhatsApp(nombreProducto, precio) {
+            const mensaje = `Hola, estoy interesado en el producto: ${nombreProducto} (${precio}). ¿Podrías darme más información?`;
+            const url = `https://wa.me/+573217391806?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        // Script para el menú desplegable en móviles
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuList = document.querySelector('.menu-list');
+
+        menuToggle.addEventListener('click', () => {
+            menuList.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
